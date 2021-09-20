@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <button class="button" aria-label="Decrement value" (click)="decrement()">
+      -
+    </button>
+    <span class="value">{{ count$ | async }}</span>
+    <button class="button" aria-label="Increment value" (click)="increment()">
+      +
+    </button>
+  </div>
+  <div class="row">
+    <input
+      class="textbox"
+      aria-label="Set increment amount"
+      [(ngModel)]="incrementAmount"
+    />
+    <button class="button" (click)="incrementByAmount()">Add Amount</button>
+  </div>
+</div>
